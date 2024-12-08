@@ -18,7 +18,7 @@ const EmailForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/emails/schedule",
+        "https://email-scheduler-backend.vercel.app/api/emails/schedule",
         formData
       );
       alert("Email scheduled successfully!");
