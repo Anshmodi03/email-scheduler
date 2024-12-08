@@ -1,0 +1,137 @@
+/* General Form Container Styles */
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+}
+
+.form-box {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+  margin-top: -20px;
+  background: linear-gradient(
+    to right,
+    #7e9bc9,
+    #026d60
+  ); /* Blue to Teal gradient */
+  margin-bottom: -20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.form-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+.form-textarea {
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  outline: none;
+  font-size: 1rem;
+  height: 150px; /* Fixed height */
+  resize: none; /* Disable resizing */
+  transition: all 0.3s ease;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  background: linear-gradient(
+    to right,
+    #f63bf6,
+    #2fff97
+  ); /* Blue to Teal gradient */
+  color: rgb(255, 255, 255);
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+
+.submit-btn:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+@media screen and (max-width: 500px) {
+  .form-box {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
