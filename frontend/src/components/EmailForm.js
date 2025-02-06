@@ -18,7 +18,7 @@ const EmailForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/emails/schedule",
+        "https://email-scheduler-7ywf.onrender.com/api/emails/schedule",
         formData
       );
       alert("Email scheduled successfully!");
